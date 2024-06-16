@@ -1,0 +1,1 @@
+<div class="footer__col footer__col--dev">Сделано в <a target="_blank" href="https://www.kalmukov.ru/">Kalmukov</a></div>

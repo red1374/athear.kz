@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Специалисты";
+$arDirProperties = Array(
+
+);
+?>

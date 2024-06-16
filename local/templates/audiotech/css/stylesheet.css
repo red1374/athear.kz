@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("../fonts/SuisseIntl-Light.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("../fonts/SuisseIntl-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("../fonts/SuisseIntl-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("../fonts/SuisseIntl-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+}
+
+.form__wrapper input.error_input, .footer-form__box.error_input,
+.form__wrapper textarea.error_input{
+    border: 1px solid #f00;
+}
+.modal-wrap{
+    z-index: 101;
+}
+.modal .section-title{
+    color: #131313;
+}
+a.link{
+    text-decoration: underline;
+}
+a.link:hover{
+    text-decoration: none;
+    color: #DB1F26;
+}
+.dev-hide{
+    display: none;
+}
+.pull-right{
+    float: right;
+}
+.pull-left{
+    float: left;
+}
+.bx-soa-more-btn{
+    margin-top: 25px;
+}
+
+.about{
+    font-size: 15px;
+    line-height: 24px;
+}
+ol {
+    counter-reset: item;
+    padding-left: 0px;
+}
+ol.multilevel{
+    margin-bottom: 25px;
+}
+ol.multilevel li {
+    display: block;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 40px;
+}
+ol.multilevel > li{
+    padding-left: 20px;
+}
+
+ol.multilevel li ol, ol.multilevel ul{
+    margin-top: 15px;
+    padding-left: 0px;
+}
+ol.multilevel li:before{
+    content: counters(item, ".") ". ";
+    counter-increment: item;
+    color: #999;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+ol.multilevel ul > li:before{
+    content: "";
+    position: absolute;
+    left: 00px;
+    top: 13px;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+ol.multilevel.first-bold > li{
+    font-size: 22px;
+    font-weight: 500;
+    padding-left: 35px;
+    margin-bottom: 30px;
+}
+
+ol.multilevel.first-bold > li li{
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 40px;
+}
+ol.multilevel.first-bold > li > ol > li{
+    margin-left: -34px;
+}
+ol.multilevel.first-bold > li > ol > li > ol > li{
+    margin-left: -40px;
+}
+ol.multilevel.first-bold > li ul > li{
+    padding-left: 25px;
+}
+ol.multilevel.first-bold > li:before{
+    color: #000;
+}
+.text_page p, .text_page li{
+    margin: 0px 0px 30px 0px;
+    color: var(--primary-black, #131313);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.section-title h2{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 122.222%;
+    letter-spacing: -0.36px;
+    margin: 0px;
+}
+
+.about__text .footer-social__link{
+    border-color: #000;
+}
+.about__text .footer-social__link svg path{
+    fill: #000;
+}
+.about__text .footer-social__link:hover svg path{
+    fill: #f00;
+}
+.input__overlay::after{
+    display: none;
+}
+.mt-40{
+    margin-top: 40px;
+}
+input.input-action.error_input[type=checkbox] + label::before{
+    border-color: #DB1F26;
+}
+.modal__check .label{
+    font-size: 14px;
+}
+.order__check{
+    margin: 0px;
+}
+.modal__check a{
+    margin: 0px;
+}
+.propsprofile__item h4{
+    margin-bottom: 0px;
+}
+.d-flex{
+    display: flex;
+}
+
+
+
+.delivery-block__status span.not-payed{
+    color: #DB1F26;
+}
+.delivery-block__status span.success{
+    color: #0BBC61;
+}
+
+.popover h3{margin-right: 25px;}
+.popover{
+    font-family: "SuisseIntl" !important;
+}
+.popover ul{
+    gap: 14px;
+}
+.slider-block h1{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 122.222%;
+    letter-spacing: -0.36px;
+    margin: 0px;
+}
+@media (max-width: 700px){
+    .section-title h1, .section-title h2{
+        font-size: 24px;
+        line-height: 125%;
+        letter-spacing: -0.24px;
+    }
+    .section-title{
+        margin-bottom: 20px;
+    }
+    ymaps[class$=balloon-overlay]{
+        position: relative !important;
+    }
+    /*.popover{
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        box-shadow: none;
+        width: auto;
+    }
+    .popover .close{
+        display: none;
+    }*/
+}

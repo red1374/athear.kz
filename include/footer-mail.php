@@ -1,0 +1,1 @@
+<a class="footer__link footer__title" href="mailto:info@athear.kz">info@athear.kz</a>
